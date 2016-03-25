@@ -1,8 +1,14 @@
-.disk-main-input input {
+.disk-main-input {
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 .center-block {
 	display: block;
 	margin: 0 auto;
+}
+
+#generateResults {
+	font-size: 30px;
+	margin-top: 20px;
 }
