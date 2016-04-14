@@ -436,7 +436,7 @@ function calculateTime(values) {
 	    datasetStroke : true,
 
 	    //Number - Pixel width of dataset stroke
-	    datasetStrokeWidth : 2,
+	    datasetStrokeWidth : 4,
 
 	    //Boolean - Whether to fill the dataset with a colour
 	    datasetFill : true,
