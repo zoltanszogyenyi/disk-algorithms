@@ -115,6 +115,45 @@ function calculateTime(values) {
 		return result;
 	}
 
+	function orderSSTF(values) {
+		// var values = [100, 23, 89, 132, 42, 187];
+		var length = values.length;
+		var ascendingValues = copyArray(values);
+		var descendingValues = copyArray(values);
+		var result = [];
+
+		ascendingValues = sortAscending(ascendingValues)
+		descendingValues = sortDescending(descendingValues);
+		var initialValue = values[0];
+
+		result.push(closest(values, initialValue));
+
+		// remove from array
+		var indexOf = values.indexOf(initialValue);
+		if (indexOf > -1) {
+				values.splice(indexOf, 1);
+		}
+
+		for (var i = 0; i < length - 2; i++) {
+			console.log(closest(values, result[i]));
+			result.push(closest(values, result[i]));
+
+			// remove from array
+			var indexOf = values.indexOf(result[i]);
+			if (indexOf > -1) {
+			    values.splice(indexOf, 1);
+			}
+		}
+
+		result.unshift(initialValue);
+
+		// console.log(values);
+		// console.log(result);
+
+		// console.log('SCAN:' + result);
+		return result;
+	}
+
 	function orderCSCAN(values, max) {
 		var ascendingValues = copyArray(values);
 		var descendingValues = copyArray(values);
@@ -317,6 +356,24 @@ function calculateTime(values) {
 				pointHighlightStroke: randomColor,
 				data: orderclook
 		});
+
+		var randomColor = getRandomColor();
+		var ordersstf = orderSSTF(values, endCilinders);
+		console.log(ordersstf);
+		addLegend(randomColor, 'SSTF', calculateTime(orderclook));
+
+		data.datasets.push({
+				label: "SSTF",
+				fillColor: 'transparent',
+				strokeColor: randomColor,
+				pointColor: randomColor,
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: randomColor,
+				data: ordersstf
+		});
+
+
 
 		addTheBest();
 
