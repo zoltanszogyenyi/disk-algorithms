@@ -11,7 +11,7 @@ The supported algorithms are the following:
 5. LOOK
 6. C-LOOK 
 
-Here's a great resource to check out what these algorithms are and how they work [doc link](http://www.cs.iit.edu/~cs561/cs450/disksched/disksched.html)
+Here's a great resource to check out what these algorithms are and how they work [doc link](http://www.cs.iit.edu/~cs561/cs450/disksched/disksched.html).
 
 ## Contributing
 
@@ -20,6 +20,8 @@ Here's a great resource to check out what these algorithms are and how they work
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+# Licensing
 
 The MIT License (MIT)
 Copyright (c) 2016 Zoltan Szogyenyi
