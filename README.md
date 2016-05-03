@@ -1,3 +1,26 @@
+# Disk scheduling algorithms
+
+The purpose of this project was to take the input necessary to run the disk scheduling algorithms and compare them in a graphically represented methodology.
+
+The supported algorithms are the following:
+
+1. First Come-First Serve (FCFS)
+2. Shortest Seek Time First (SSTF)
+3. Elevator (SCAN) 
+4. Circular SCAN (C-SCAN)
+5. LOOK
+6. C-LOOK 
+
+Here's a great resource to check out what these algorithms are and how they work [doc link](http://www.cs.iit.edu/~cs561/cs450/disksched/disksched.html)
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
 The MIT License (MIT)
 Copyright (c) 2016 Zoltan Szogyenyi
 
