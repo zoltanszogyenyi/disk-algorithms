@@ -21,7 +21,7 @@ Here's a great resource to check out what these algorithms are and how they work
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
-# Licensing
+## Licensing
 
 The MIT License (MIT)
 Copyright (c) 2016 Zoltan Szogyenyi
